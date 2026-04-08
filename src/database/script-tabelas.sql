@@ -26,6 +26,9 @@ CREATE TABLE usuario (
 	FOREIGN KEY (fk_empresa) REFERENCES empresa(id)
 );
 
+ALTER TABLE usuario ADD COLUMN cpf CHAR(11);
+SELECT * FROM usuario;
+
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(100),
